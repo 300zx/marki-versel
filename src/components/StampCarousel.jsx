@@ -511,22 +511,23 @@ const imageFiles = [
               />
 
               {/* Navigation Buttons */}
-              <button
-                onClick={prevSlide}
-                className="absolute left-4 p-3 rounded-full bg-white/90 hover:bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-x-1 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                aria-label="Previous image"
-                disabled={isTransitioning}
-              >
-                <ChevronLeft size={24} className="text-gray-800" />
-              </button>
-              <button
-                onClick={nextSlide}
-                className="absolute right-4 p-3 rounded-full bg-white/90 hover:bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:translate-x-1 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                aria-label="Next image"
-                disabled={isTransitioning}
-              >
-                <ChevronRight size={24} className="text-gray-800" />
-              </button>
+<button
+  onClick={prevSlide}
+  className="absolute bottom-4 left-4 p-2 rounded-full bg-white/90 hover:bg-white shadow-lg hover:shadow-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+  aria-label="Previous image"
+  disabled={isTransitioning}
+>
+  <ChevronLeft size={16} className="text-gray-800" />
+</button>
+<button
+  onClick={nextSlide}
+  className="absolute bottom-4 right-4 p-2 rounded-full bg-white/90 hover:bg-white shadow-lg hover:shadow-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+  aria-label="Next image"
+  disabled={isTransitioning}
+>
+  <ChevronRight size={16} className="text-gray-800" />
+</button>
+
             </div>
           </div>
 
